@@ -40,6 +40,8 @@ function List({ todos, setTodos }) {
           }
         })}
       </div>
+      <span>line-line-line</span>
+      <hr className="line"/>
 
       <h2 className="list-title">Done</h2>
       <div className="list-wrapper">

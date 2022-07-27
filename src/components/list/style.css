@@ -1,12 +1,14 @@
-.list-container { 
-    padding: 0 15px;
-  }
-  
 .list-wrapper{
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
     gap: 12px;
-  }
+}
+
+.line {
+  border-style: none;
+  border-top:1px solid #ccc;
+} 
 
 
 .todo-container {

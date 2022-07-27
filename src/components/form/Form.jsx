@@ -18,7 +18,7 @@ function Form({ setTodos, todos }) {
   const onSubmit = (event) => {
     event.preventDefault();
     setTodos([...todos, todo]);
-    setTodo(initialState);
+    //setTodo(initialState);
   };
 
   return (
