@@ -4,7 +4,7 @@ import "./style.css";
 function Header() {
     return (
         <div className="container">
-            <div>빛빛's Todo List</div>
+            <div>💫빛빛's Todo List💫</div>
         </div>
     );
 }

@@ -14,8 +14,8 @@ const TodoList = () => {
     },
     {
       id: 2,
-      title: "아침세수",
-      body: "청결청결~",
+      title: "마시기",
+      body: "커피",
       isDone: true,
     },
   ]);

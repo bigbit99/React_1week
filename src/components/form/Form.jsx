@@ -10,29 +10,27 @@ function Form({ setTodos, todos }) {
   };
 
   const [todo, setTodo] = useState(initialState);
-  const onChangeHandler = (event) => {
+  const onChange = (event) => {
     const { name, value } = event.target;
     setTodo({ ...todo, [name]: value, id: todos.length + 1 });
   };
 
-  const onSubmitHandler = (event) => {
+  const onSubmit = (event) => {
     event.preventDefault();
     setTodos([...todos, todo]);
     setTodo(initialState);
   };
 
   return (
-    <form onSubmit={onSubmitHandler} className="add-form">
+    <form className="add-form" onSubmit={onSubmit}>
       <div className="input-group">
         <label className="form-label">제목</label>
-        <input type="text" name="title" value={todo.title}
-          className="add-input input-body"
-          onChange={onChangeHandler}
+        <input className="add-input" type="text" name="title" value={todo.title}
+          onChange={onChange}
         />
         <label className="form-label">내용</label>
-        <input type="text" name="body" value={todo.body}
-          className="add-input"
-          onChange={onChangeHandler}
+        <input className="add-input" type="text" name="body" value={todo.body}
+          onChange={onChange}
         />
       </div>
       <button className="add-button">추가하기</button>
