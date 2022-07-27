@@ -40,7 +40,7 @@ function List({ todos, setTodos }) {
           }
         })}
       </div>
-
+      <hr />
       <h2 className="list-title">다한거</h2>
       <div className="list-wrapper">
         {todos.map((todo) => {
